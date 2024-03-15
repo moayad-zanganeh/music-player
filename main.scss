@@ -1,0 +1,115 @@
+$color: #e5e5e5;
+$secound-color: #969696;
+$primary-color: #bcbcbc;
+
+@font-face {
+  font-family: SF pro display;
+  src: url(./fonts/SFPRODISPLAYBOLD.OTF), url(./fonts/SFPRODISPLAYMEDIUM.OTF),
+    url(./fonts/SFPRODISPLAYREGULAR.OTF);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+  font-family: 'SF pro display';
+}
+article {
+  padding: 30px;
+  header {
+    display: flex;
+    justify-content: center;
+    gap: 25%;
+    span {
+      color: $color;
+    }
+  }
+}
+
+div {
+  img {
+    width: 355px;
+    height: 355px;
+    margin-top: 2%;
+  }
+
+  h3 {
+    color: $color;
+    margin-left: 10%;
+  }
+
+  span {
+    color: $primary-color;
+    margin-left: 10%;
+  }
+}
+
+#icons {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    width: 20%;
+    border-radius: 50px;
+    background-color: #131313;
+    height: 20%;
+    padding: 5%;
+  }
+}
+#nextmusic {
+  background: #9696961f;
+  border-radius: 50px;
+  height: 120px;
+  margin-top: 5%;
+  #next {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
+    align-items: center;
+    img {
+      width: 23px;
+      height: 23px;
+      border-radius: 50px;
+      margin-right: 10%;
+    }
+    #next1,
+    #next2 {
+      display: flex;
+      gap: 13%;
+      padding-top: 2%;
+    }
+  }
+}
+
+#playbar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #969696;
+    padding: 10px;
+    // margin-right: 7%;
+  }
+
+  .skip {
+    background-color: #131313;
+  }
+
+  .Pause {
+    background-color: #e5e5e5;
+  }
+
+  :first-child,
+  :last-child {
+    background-color: #000000;
+  }
+}
